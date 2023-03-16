@@ -4,6 +4,13 @@ const inputs = document.querySelectorAll(".inputRequired");
 const spans = document.querySelectorAll(".spanRequired");
 const senhaFormat = /^(?=.*[A-Z])(?=.*[!#@$%&])(?=.*[0-9])(?=.*[a-z]).{6,15}$/;
 
+// O “.” compõe junto com o “*” em cada uma das classes para aceitar 0 ou mais caracteres antes
+// do caracter que está sendo exigido (minúsculo, maiúsculo, número ou caracter especial).
+// O “=?” é conhecido como positive lookahead, e é uma forma de adicionar regras não capturáveis
+// em expressões regulares.
+// No caso dessa expressão, é ela que permite buscar cada exigência por vez sem influenciar nas
+// demais por não ter capturado.
+
 function addClassErro(index) {
   inputs[index].classList.add("input-erro");
   spans[index].classList.add("span-erro");
