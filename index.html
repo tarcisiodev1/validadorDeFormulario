@@ -4,7 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1 id="titulo">Cadastro:</h1>
+      <form id="form" action="">
+        <div>
+          <input
+            type="text"
+            id="user"
+            name="user"
+            placeholder="Escreva seu usuario aqui..."
+            class="inputRequired"
+          />
+          <span class="spanRequired">Minimo 3 caracteres</span>
+        </div>
+        <div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Escreva sua senha aqui..."
+            class="inputRequired"
+          />
+          <span class="spanRequired">Email invalido </span>
+        </div>
+        <div>
+          <input
+            type="password"
+            id="Senha"
+            name="Senha"
+            placeholder="Escreva sua senha novamente aqui..."
+            class="inputRequired"
+          />
+          <span class="spanRequired"></span>
+            
+          </span>
+        </div>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,16 @@
+span {
+  display: none;
+}
+.input-erro {
+  border: 2px solid red;
+  border-radius: 5px;
+  color: red;
+}
+
+.span-erro {
+  display: inline;
+  border: 2px solid red;
+  border-radius: 5px;
+  font-size: 15px;
+  color: red;
+}
