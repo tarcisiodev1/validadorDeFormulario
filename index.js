@@ -51,14 +51,14 @@ function validacaoSenha() {
   }
 }
 console.log(inputs[1].value);
-inputs.forEach((value) => {
-  value.addEventListener("focus", (ev) => {
-    ev.preventDefault();
-    validacaoUser();
-    validacaoEmail();
-    validacaoSenha();
-  });
-});
+// inputs.forEach((value) => {
+//   value.addEventListener("focus", (ev) => {
+//     ev.preventDefault();
+//     validacaoUser();
+//     validacaoEmail();
+//     validacaoSenha();
+//   });
+// });
 
 form.addEventListener("submit", (ev) => {
   ev.preventDefault();
